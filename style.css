@@ -1,0 +1,72 @@
+body {
+  background: #eef5ff;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.planner-card {
+  max-width: 850px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.stat-box {
+  background: #f5f8fc;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.stat-box strong {
+  display: block;
+  font-size: 24px;
+}
+
+.stat-box span {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.task-card {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+.task-card.completed {
+  background: #f4fff6;
+}
+
+.task-text.completed-text {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.edit-input {
+  max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  .planner-card {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .task-actions {
+    margin-top: 10px;
+  }
+}
